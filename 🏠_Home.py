@@ -110,7 +110,7 @@ def criar_card_projeto(numero, superintendencia, gerencia, proponente, link_form
             <p style="margin: 0.5rem 0;"><strong>Gerência:</strong> {gerencia}</p>
             <p style="margin: 0.5rem 0 1rem 0;"><strong>Proponente:</strong> {proponente}</p>
             <div style="text-align: right;">
-                <a href="pages/Avaliacao_Projeto_{numero}.py" target="_self" style="text-decoration: none;">
+                <a href="http://localhost:8501/AvaliacaoProjetoIAQuestoes" target="_self" style="text-decoration: none;">
                     <button style="background-color: #4B0082; color: white; border: none; border-radius: 5px; padding: 0.5rem 1.5rem; font-size: 1rem;">
                         Avaliar Projeto {numero} →
                     </button>
@@ -121,12 +121,7 @@ def criar_card_projeto(numero, superintendencia, gerencia, proponente, link_form
 
 # PROJETOS (substitua com seus dados reais)
 projetos = [
-    {"numero": 1, "superintendencia": "SUP", "gerencia": "GER", "proponente": "Proponente", "link_forms": "https://forms/link1"},
-    {"numero": 2, "superintendencia": "SUP", "gerencia": "GER", "proponente": "Proponente", "link_forms": "https://forms/link2"},
-    {"numero": 3, "superintendencia": "SUP", "gerencia": "GER", "proponente": "Proponente", "link_forms": "https://forms/link3"},
-    {"numero": 4, "superintendencia": "SUP", "gerencia": "GER", "proponente": "Proponente", "link_forms": "https://forms/link4"},
-    {"numero": 5, "superintendencia": "SUP", "gerencia": "GER", "proponente": "Proponente", "link_forms": "https://forms/link5"},
-    {"numero": 6, "superintendencia": "SUP", "gerencia": "GER", "proponente": "Proponente", "link_forms": "https://forms/link6"}
+    {"numero": "Utilização de IA para o desenvolvimento de questões em processos públicos", "superintendencia": "SUNOA", "gerencia": "Administração Pública Processos Seletivos Públicos - Nacional", "proponente": "Jeremias Silva", "link_forms": "https://docs.google.com/spreadsheets/d/1KZbUqlQf3B_QAEH_1IoH1n-B-6nk6v3eFwO6w_5bzOM/edit?gid=1103467164#gid=1103467164"}
 ]
 
 for projeto in projetos:
